@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Found Items | FindIt Campus</title>
+  <title>Lost &amp; Found | FindIt Campus</title>
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -17,28 +17,128 @@
       <span class="nav-icon-bar"></span>
     </label>
     <label for="nav-toggle" class="nav-overlay" aria-hidden="true"></label>
-    <nav aria-label="Main navigation"><a href="index.html">Home</a><a class="active" href="items.html">Found Items</a><a href="report.html">Report an Item</a><a href="about.html">About</a></nav>
+    <nav aria-label="Main navigation"><a href="index.html">Home</a><a class="active" href="items.html">Lost &amp; Found</a><a href="report.html">Report an Item</a><a href="about.html">About</a></nav>
   </header>
   <main>
     <section class="page-hero">
-      <p class="eyebrow">The community board</p><h1>Recently found <span>items.</span></h1>
-      <p>Explore sample listings from around campus. If an item looks familiar, use the details to help identify it.</p>
-      <div class="breadcrumb"><a href="index.html">Home</a><span>/</span> Found Items</div>
+      <h1>Lost &amp; <span>Found</span></h1>
+      <div class="breadcrumb"><a href="index.html">Home</a><span>/</span> Lost &amp; Found</div>
     </section>
     <section class="section-wrap listing-section">
-      <div class="listing-top"><div><h2>Found-item board</h2><p class="muted">Sample listings for the website project</p></div><a class="button button-primary" href="report.html">＋ Add a report</a></div>
-      <div class="filter-chips"><span class="chip selected">All items</span><span class="chip">Electronics</span><span class="chip">Cards & IDs</span><span class="chip">Accessories</span><span class="chip">Stationery</span></div>
+      <div class="listing-top"><h2>Lost &amp; Found board</h2><a class="button button-primary" href="report.html">＋ Add a report</a></div>
+      <div class="filter-chips"><span class="chip selected">All items</span><span class="chip">Lost</span><span class="chip">Found</span><span class="chip">Electronics</span><span class="chip">Cards &amp; IDs</span><span class="chip">Accessories</span><span class="chip">Stationery</span></div>
       <div class="item-grid">
-        <article class="item-card"><div class="item-visual visual-blue"><span class="item-emoji">🎧</span><span class="status">Found</span></div><div class="item-info"><div class="item-type">ELECTRONICS</div><h3>Wireless headphones</h3><p class="item-place">⌖ Central Library · 1st floor</p><div class="item-bottom"><span>Oct 14, 2026</span><a href="report.html">I recognize this →</a></div></div></article>
-        <article class="item-card"><div class="item-visual visual-yellow"><span class="item-emoji">🪪</span><span class="status">Found</span></div><div class="item-info"><div class="item-type">CARDS & IDs</div><h3>Student ID card</h3><p class="item-place">⌖ Main cafeteria entrance</p><div class="item-bottom"><span>Oct 13, 2026</span><a href="report.html">I recognize this →</a></div></div></article>
-        <article class="item-card"><div class="item-visual visual-green"><span class="item-emoji">🔑</span><span class="status">Found</span></div><div class="item-info"><div class="item-type">ACCESSORIES</div><h3>Key with blue keychain</h3><p class="item-place">⌖ Science building · Room 204</p><div class="item-bottom"><span>Oct 12, 2026</span><a href="report.html">I recognize this →</a></div></div></article>
-        <article class="item-card"><div class="item-visual visual-pink"><span class="item-emoji">📓</span><span class="status">Found</span></div><div class="item-info"><div class="item-type">STATIONERY</div><h3>Spiral notebook</h3><p class="item-place">⌖ Building B · Lecture hall</p><div class="item-bottom"><span>Oct 11, 2026</span><a href="report.html">I recognize this →</a></div></div></article>
-        <article class="item-card"><div class="item-visual visual-lilac"><span class="item-emoji">☂️</span><span class="status">Found</span></div><div class="item-info"><div class="item-type">ACCESSORIES</div><h3>Compact umbrella</h3><p class="item-place">⌖ Campus bus #3 · Morning route</p><div class="item-bottom"><span>Oct 10, 2026</span><a href="report.html">I recognize this →</a></div></div></article>
-        <article class="item-card"><div class="item-visual visual-orange"><span class="item-emoji">📁</span><span class="status">Found</span></div><div class="item-info"><div class="item-type">STATIONERY</div><h3>Blue document folder</h3><p class="item-place">⌖ Administration building</p><div class="item-bottom"><span>Oct 9, 2026</span><a href="report.html">I recognize this →</a></div></div></article>
+        <article class="item-card">
+          <div class="item-visual">
+            <img src="images/headphones.jpg" alt="Wireless headphones" class="item-img" loading="lazy">
+            <span class="status status-found">Found</span>
+          </div>
+          <div class="item-info">
+            <div class="item-type">ELECTRONICS</div>
+            <h3>Wireless headphones</h3>
+            <p class="item-place">⌖ Central Library · 1st floor</p>
+            <div class="item-bottom"><span>Oct 14, 2026</span><a href="report.html">I recognize this →</a></div>
+          </div>
+        </article>
+        <article class="item-card">
+          <div class="item-visual">
+            <img src="images/id-card.jpg" alt="Student ID card" class="item-img" loading="lazy">
+            <span class="status status-lost">Lost</span>
+          </div>
+          <div class="item-info">
+            <div class="item-type">CARDS &amp; IDs</div>
+            <h3>Student ID card</h3>
+            <p class="item-place">⌖ Main cafeteria entrance</p>
+            <div class="item-bottom"><span>Oct 13, 2026</span><a href="report.html">I have this →</a></div>
+          </div>
+        </article>
+        <article class="item-card">
+          <div class="item-visual">
+            <img src="images/keys.jpg" alt="Key with blue keychain" class="item-img" loading="lazy">
+            <span class="status status-found">Found</span>
+          </div>
+          <div class="item-info">
+            <div class="item-type">ACCESSORIES</div>
+            <h3>Key with blue keychain</h3>
+            <p class="item-place">⌖ Science building · Room 204</p>
+            <div class="item-bottom"><span>Oct 12, 2026</span><a href="report.html">I recognize this →</a></div>
+          </div>
+        </article>
+        <article class="item-card">
+          <div class="item-visual">
+            <img src="images/notebook.jpg" alt="Textbook and reading glasses" class="item-img" loading="lazy">
+            <span class="status status-lost">Lost</span>
+          </div>
+          <div class="item-info">
+            <div class="item-type">STATIONERY</div>
+            <h3>Textbook &amp; reading glasses</h3>
+            <p class="item-place">⌖ Building B · Lecture hall</p>
+            <div class="item-bottom"><span>Oct 11, 2026</span><a href="report.html">I have this →</a></div>
+          </div>
+        </article>
+        <article class="item-card">
+          <div class="item-visual">
+            <img src="images/bottle.jpg" alt="Matte green water bottle" class="item-img" loading="lazy">
+            <span class="status status-found">Found</span>
+          </div>
+          <div class="item-info">
+            <div class="item-type">ACCESSORIES</div>
+            <h3>Matte green water bottle</h3>
+            <p class="item-place">⌖ Campus gym &amp; sports complex</p>
+            <div class="item-bottom"><span>Oct 10, 2026</span><a href="report.html">I recognize this →</a></div>
+          </div>
+        </article>
+        <article class="item-card">
+          <div class="item-visual">
+            <img src="images/backpack.jpg" alt="Black laptop backpack" class="item-img" loading="lazy">
+            <span class="status status-lost">Lost</span>
+          </div>
+          <div class="item-info">
+            <div class="item-type">ACCESSORIES</div>
+            <h3>Black laptop daypack</h3>
+            <p class="item-place">⌖ Campus bus #3 · Morning route</p>
+            <div class="item-bottom"><span>Oct 9, 2026</span><a href="report.html">I have this →</a></div>
+          </div>
+        </article>
+        <article class="item-card">
+          <div class="item-visual">
+            <img src="images/calculator.jpg" alt="Scientific study calculator" class="item-img" loading="lazy">
+            <span class="status status-found">Found</span>
+          </div>
+          <div class="item-info">
+            <div class="item-type">ELECTRONICS</div>
+            <h3>Scientific calculator</h3>
+            <p class="item-place">⌖ Mathematics lab · 3rd floor</p>
+            <div class="item-bottom"><span>Oct 8, 2026</span><a href="report.html">I recognize this →</a></div>
+          </div>
+        </article>
+        <article class="item-card">
+          <div class="item-visual">
+            <img src="images/wallet.jpg" alt="Brown leather wallet" class="item-img" loading="lazy">
+            <span class="status status-lost">Lost</span>
+          </div>
+          <div class="item-info">
+            <div class="item-type">CARDS &amp; IDs</div>
+            <h3>Brown leather wallet</h3>
+            <p class="item-place">⌖ University student union</p>
+            <div class="item-bottom"><span>Oct 7, 2026</span><a href="report.html">I have this →</a></div>
+          </div>
+        </article>
+        <article class="item-card">
+          <div class="item-visual">
+            <img src="images/glasses.jpg" alt="Classic black sunglasses" class="item-img" loading="lazy">
+            <span class="status status-found">Found</span>
+          </div>
+          <div class="item-info">
+            <div class="item-type">ACCESSORIES</div>
+            <h3>Classic black sunglasses</h3>
+            <p class="item-place">⌖ Campus courtyard bench</p>
+            <div class="item-bottom"><span>Oct 6, 2026</span><a href="report.html">I recognize this →</a></div>
+          </div>
+        </article>
       </div>
-      <p class="notice"><strong>Please note:</strong> These are demonstration listings created for the class project, not real reports.</p>
     </section>
   </main>
-  <footer class="site-footer"><a class="brand" href="index.html"><img class="brand-logo" src="logo.png" alt="FindIt Campus"></a><p>A student website design project · HTML & CSS</p><span>© 2026 FindIt Campus</span></footer>
+  <footer class="site-footer"><p>© 2026 FindIt Campus</p></footer>
 </body>
 </html>
