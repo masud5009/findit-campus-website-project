@@ -10,6 +10,13 @@
 <body>
   <header class="site-header">
     <a class="brand" href="index.html"><img class="brand-logo" src="logo.png" alt="FindIt Campus"></a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+    <label for="nav-toggle" class="nav-toggle-btn" aria-label="Open navigation menu">
+      <span class="nav-icon-bar"></span>
+      <span class="nav-icon-bar"></span>
+      <span class="nav-icon-bar"></span>
+    </label>
+    <label for="nav-toggle" class="nav-overlay" aria-hidden="true"></label>
     <nav aria-label="Main navigation">
       <a class="active" href="index.html">Home</a>
       <a href="items.html">Found Items</a>
@@ -27,10 +34,6 @@
           <a class="button button-primary" href="items.html">Browse Found Items <span>→</span></a>
           <a class="button button-light" href="report.html">Report an Item</a>
         </div>
-        <div class="trust-note">
-          <span class="check">✓</span>
-          <span>Helping campus belongings find their owners.</span>
-        </div>
       </div>
       <div class="hero-art" aria-label="Illustration of a lost-and-found box">
         <div class="sun"></div>
@@ -42,6 +45,38 @@
           <div class="plant"><i></i><i></i><i></i><b></b></div>
         </div>
         <span class="sparkle sparkle-a">✦</span><span class="sparkle sparkle-b">✳</span>
+      </div>
+    </section>
+
+    <!-- Quick Categories Section -->
+    <section class="section-wrap quick-categories-section" aria-label="Quick Categories">
+      <div class="quick-categories-bar">
+        <div class="categories-title">
+          <span class="cat-title-badge">Browse</span>
+          <h3>Quick Categories:</h3>
+        </div>
+        <div class="categories-list">
+          <a class="category-chip" href="items.html">
+            <span class="cat-chip-icon visual-blue">🎧</span>
+            <span>Electronics</span>
+          </a>
+          <a class="category-chip" href="items.html">
+            <span class="cat-chip-icon visual-yellow">🪪</span>
+            <span>Cards & IDs</span>
+          </a>
+          <a class="category-chip" href="items.html">
+            <span class="cat-chip-icon visual-green">🔑</span>
+            <span>Accessories</span>
+          </a>
+          <a class="category-chip" href="items.html">
+            <span class="cat-chip-icon visual-pink">📓</span>
+            <span>Stationery</span>
+          </a>
+          <a class="category-chip" href="items.html">
+            <span class="cat-chip-icon visual-lilac">☂️</span>
+            <span>Essentials</span>
+          </a>
+        </div>
       </div>
     </section>
 
