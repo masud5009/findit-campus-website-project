@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report an Item | FindIt Campus</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><img class="brand-logo" src="logo.png" alt="FindIt Campus"></a>
+    <nav aria-label="Main navigation"><a href="index.html">Home</a><a href="items.html">Found Items</a><a class="active" href="report.html">Report an Item</a><a href="about.html">About</a></nav>
+  </header>
+  <main>
+    <section class="page-hero compact">
+      <p class="eyebrow">Give a lost item a way back</p><h1>Make a <span>report.</span></h1>
+      <p>Share the basic details so another student can recognize their belongings.</p>
+      <div class="breadcrumb"><a href="index.html">Home</a><span>/</span> Report an Item</div>
+    </section>
+    <section class="section-wrap report-layout">
+      <div class="report-intro"><div class="report-symbol">✎</div><h2>Every detail helps.</h2><p>Describe the item clearly and include the campus location where it was found or last seen.</p>
+        <div class="tip-box"><strong>Helpful tips</strong><ul><li>Use a clear, simple item name.</li><li>Include the building or nearby landmark.</li><li>Do not publish private information from IDs or cards.</li></ul></div>
+      </div>
+      <form class="report-form" action="#" method="get">
+        <div class="form-heading"><h2>Item details</h2><p>Fields marked with * are required.</p></div>
+        <label for="report-type">I want to <span>*</span></label>
+        <div class="radio-row"><label class="radio-option"><input type="radio" name="report-type" value="found" checked> Report an item I found</label><label class="radio-option"><input type="radio" name="report-type" value="lost"> Report an item I lost</label></div>
+        <label for="item-name">Item name <span>*</span></label><input id="item-name" name="item-name" type="text" placeholder="e.g. Black water bottle" required>
+        <label for="category">Category <span>*</span></label><select id="category" name="category" required><option value="">Choose a category</option><option>Electronics</option><option>Cards & IDs</option><option>Accessories</option><option>Stationery</option><option>Other</option></select>
+        <label for="location">Campus location <span>*</span></label><input id="location" name="location" type="text" placeholder="e.g. Campus bus, Central Library, or Science Block" required>
+        <label for="date">Date noticed <span>*</span></label><input id="date" name="date" type="date" required>
+        <label for="description">Description</label><textarea id="description" name="description" rows="4" placeholder="Color, brand, distinctive features, or other helpful details"></textarea>
+        <div class="form-two"><div><label for="contact-name">Your name</label><input id="contact-name" name="contact-name" type="text" placeholder="Name"></div><div><label for="contact-email">Contact email</label><input id="contact-email" name="contact-email" type="email" placeholder="you@example.com"></div></div>
+        <p class="form-note">Demo form: this HTML/CSS project does not send or save submissions.</p>
+        <button class="button button-primary submit-button" type="submit">Submit Sample Report <span>→</span></button>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="brand" href="index.html"><img class="brand-logo" src="logo.png" alt="FindIt Campus"></a><p>A student website design project · HTML & CSS</p><span>© 2026 FindIt Campus</span></footer>
+</body>
+</html>
