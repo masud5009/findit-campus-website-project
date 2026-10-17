@@ -749,36 +749,44 @@ a {
    ========================================================================== */
 .site-footer {
   border-top: 1px solid var(--line);
-  min-height: 95px;
+  min-height: 105px;
   max-width: 1180px;
   margin: auto;
-  padding: 26px 28px;
+  padding: 34px 28px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
+  gap: 24px;
 }
 
 .site-footer .brand {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .site-footer .brand-mark {
-  width: 34px;
-  height: 34px;
-  border-radius: 10px;
-  font-size: 18px;
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  font-size: 20px;
 }
 
 .site-footer .brand-logo {
-  height: 36px;
+  height: 42px;
 }
 
-.site-footer p,
-.site-footer > span {
-  font-size: 13.5px;
-  color: var(--muted);
+.site-footer p {
+  font-size: 15.5px;
+  font-weight: 500;
+  color: #4b5d6c;
   margin: 0;
+}
+
+.site-footer > span {
+  font-size: 15px;
+  font-weight: 500;
+  color: #627482;
+  margin: 0;
+  white-space: nowrap;
 }
 
 /* ==========================================================================
@@ -1445,11 +1453,20 @@ a {
 
   .site-footer {
     flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 28px 24px;
   }
 
   .site-footer p {
     order: 3;
     width: 100%;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .site-footer > span {
+    font-size: 14.5px;
   }
 }
 
@@ -1575,11 +1592,19 @@ a {
   }
 
   .site-footer {
-    padding: 24px 20px;
+    padding: 28px 20px;
+    flex-direction: column;
+    gap: 14px;
+    text-align: center;
+  }
+
+  .site-footer p {
+    font-size: 14.5px;
+    line-height: 1.5;
   }
 
   .site-footer > span {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .page-hero {
